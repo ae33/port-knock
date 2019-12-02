@@ -78,10 +78,13 @@ iptables -A INPUT -j STATE0
 ```
 
 Make sure to save these `iptables` rules, so they persist. In Arch Linux, for
-example, you would execute `iptables-save > /etc/iptables/iptables.rules`.
+example, you would execute: 
+```bash
+iptables-save > /etc/iptables/iptables.rules
+```
 
 ## Usage
-Execute `scripts/knock.sh`, and voila! You're in.
+Execute your edited `scripts/knock.sh`, and voila! You're in.
 
 You could even consider adding the script to your PATH, for easy access.
 
@@ -95,7 +98,7 @@ It is also possible that your SSH server's firewall isn't set up properly. Check
 your active rules with `iptables -S` or `iptables -L`, and make sure you aren't 
 blocking any of your desired inbound or outbound traffic.
 
-A basic `iptables -S` cheat sheet:
+A basic `iptables` cheat sheet:
 
 | Flag | Description
 |------|-----------------------------------------------------------------------------------------|
