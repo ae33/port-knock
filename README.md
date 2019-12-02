@@ -16,9 +16,10 @@ You do have the option to use a different location for the config file via the
 `go build`. In the latter scenario, you'll need to make sure you have a proper 
 Golang environment set up.
  
-After finalizing your config, take a look at `scripts/knock.sh`. Make sure you 
-have execute permissions on the script (e.g. `chmod 744 scripts/knock.sh`). 
-Then, edit the final line in the script to have your ssh information.
+After finalizing your config, take a look at `scripts/knock_template.sh`. Make 
+sure you have execute permissions on the script (e.g. 
+`chmod 744 scripts/knock_template.sh`). Then, edit the final line in the script 
+to have your ssh information.
 
 #### Server-side
 You will need to make sure your ssh daemon is running. This varies from OS to 
@@ -84,9 +85,10 @@ iptables-save > /etc/iptables/iptables.rules
 ```
 
 ## Usage
-Execute your edited `scripts/knock.sh`, and voila! You're in.
+Execute your edited `scripts/knock_template.sh`, and voila! You're in.
 
-You could even consider adding the script to your PATH, for easy access.
+You could even consider adding the script to your PATH, for easy access. A 
+suitable place would be in `/usr/bin`.
 
 ## Troubleshooting
 If your script is hanging, it is possible that your router isn't forwarding all
