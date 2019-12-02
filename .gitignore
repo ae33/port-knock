@@ -1,0 +1,6 @@
+# IntelliJ metadata files
+*.iml
+.idea
+
+# The binary
+port-knock

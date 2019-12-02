@@ -1,0 +1,6 @@
+# This is an example of what could be put in /etc/port-knock/port-knock.yml.
+host: mysshserver.com
+ports:
+  - 12345
+  - 23456
+  - 34567
