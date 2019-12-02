@@ -88,7 +88,10 @@ iptables-save > /etc/iptables/iptables.rules
 Execute your edited `scripts/knock_template.sh`, and voila! You're in.
 
 You could even consider adding the script to your PATH, for easy access. A 
-suitable place would be in `/usr/bin`.
+suitable place would be in `/usr/bin`. If you do this, you could use a much
+simpler script than `scripts/knock_template.sh` and simply have a call to your
+binary, followed by your ssh command. If you alias this script, you could have a
+one word command to connect to your SSH server.
 
 ## Troubleshooting
 If your script is hanging, it is possible that your router isn't forwarding all
