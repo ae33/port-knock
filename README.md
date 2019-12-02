@@ -4,7 +4,7 @@ A tool to easily perform arbitrary port-knocking.
 ## Setup
 
 #### Client-side
-First, Clone this repo.
+First, fork and clone this repo.
 
 Next, you will need to define a config file. You can find examples in 
 `config/examples`. Your final config file should be located at 
